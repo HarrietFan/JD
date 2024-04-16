@@ -1,0 +1,154 @@
+html,
+body {
+    height: 100%;
+}
+
+
+/* 通栏样式 */
+
+.jd_layout {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.jd_topBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #ccc;
+    background: url(../images/header-bg.png) 0 0/1px 44px;
+    z-index: 1;
+}
+
+.jd_topBar a {
+    width: 40px;
+    height: 44px;
+    padding: 12px 12px;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+
+.jd_topBar .icon_back {
+    background-position: -20px 0;
+}
+
+.jd_topBar .icon_menu {
+    background-position: -60px 0;
+}
+
+.jd_topBar form {
+    flex: 1;
+}
+
+.jd_topBar form input {
+    margin-top: 7px;
+    padding: 0 10px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+/* 主体部分 */
+
+.jd_main {
+    display: flex;
+    padding-top: 45px;
+    width: 100%;
+    height: 100%;
+}
+
+.jd_main .jd_cateLeft {
+    overflow: hidden;
+    width: 90px;
+    height: 100%;
+}
+
+.jd_cateLeft ul {
+    width: 90px;
+}
+
+.jd_cateLeft ul li {
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #f3f4f5;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-size: 12px;
+}
+
+.jd_cateLeft ul li.now {
+    border-right: none;
+    background-color: #fff;
+}
+
+.jd_cateLeft ul li a {
+    display: block;
+    width: 100%;
+}
+
+.jd_cateLeft ul li.now a {
+    color: #d8505c;
+}
+
+.jd_main .jd_cateRight {
+    overflow: hidden;
+    flex: 1;
+}
+
+.jd_cateRight_box {
+    padding: 0 10px;
+}
+
+.jd_cateRight_box .banner img {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.jd_cateRight_box .hot {
+    margin-top: 10px;
+}
+
+.jd_cateRight_box .hot h3 {
+    font-size: 12px;
+}
+
+.jd_cateRight_box .hot ul {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.jd_cateRight_box .hot ul li {
+    float: left;
+    padding-top: 5px;
+    flex: 1;
+}
+
+.jd_cateRight_box .hot ul li a {
+    display: block;
+    width: 100%;
+}
+
+.jd_cateRight_box .hot ul li a img {
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+}
+
+.jd_cateRight_box .hot ul li a p {
+    padding: 5px 0;
+    font-size: 12px;
+    text-align: center;
+}

@@ -1,0 +1,302 @@
+/* 变量 */
+vw_fontsize = 75;
+vw_design = 750;
+font_name_color = #d8505c;
+border_color = #ccc;
+
+/* 函数 */
+vw(px) {
+  px / vw_design * 100vw;
+}
+
+flex-box(direction = row, wp = wrap, jus = space-around, item = center) {
+  display: flex;
+  flex-direction: direction;
+  flex-wrap: wp;
+  justify-content: jus;
+  align-items: item;
+} /* swiper hack */
+
+.jd-container .swiper-pagination-bullet {
+  border-color: #fff;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.jd-container .swiper-pagination-bullet-active {
+  background-color: orange;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 0;
+}
+
+img {
+  display: block;
+  outline: 0;
+  border: 0;
+}
+
+/* icon */
+[class*=_logo], [class*=_icon] {
+  background: url('../../images/sprites.png') no-repeat;
+  background-size: 200px 200px;
+}
+
+/* .jd-head container */
+.jd-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.jd-search_icon {
+  position: absolute;
+  left: 8px;
+  // top: 6px;
+  width: vw(40);
+  height: vw(40);
+  background-position: -60px -109px;
+}
+
+.jd-head {
+  width: 100%;
+  flex-box(column, nowrap, flex-start, center);
+}
+
+.jd-search {
+  position: fixed;
+  width: 100%;
+  flex-box(row, nowrap, space-around, center);
+  background-color: rgba(122, 0, 0, 0.3);
+  z-index: 9;
+}
+
+.jd-search_logo {
+  width: vw(120);
+  height: vw(72);
+  background-position: 0 -103px;
+}
+
+.jd-search_input {
+  position: relative;
+  flex-box(row, nowrap, flex-start, center);
+}
+
+.jd-search_input > input {
+  box-sizing: border-box;
+  padding: 0 vw(10);
+  width: vw(520);
+  height: vw(60);
+  line-height: vw(60);
+  border: 0;
+  outline: 0;
+  border-radius: vw(60);
+}
+
+.jd-search_input ::placeholder {
+  text-indent: 2em;
+  color: #ccc;
+}
+
+.jd-search_login {
+  color: #fff;
+}
+
+/* banner */
+.jd-banner {
+  width: 100%;
+}
+
+.jd-banner img {
+  width: 100%;
+}
+
+/* nav */
+.jd-nav {
+  box-sizing: border-box;
+  width: 100%;
+  height: vw(300);
+  padding: vw(20) 0;
+  flex-box(row, wrap, space-around, space-between);
+  align-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 -1px 2px #ccc;
+}
+
+.jd-nav_item {
+  flex-box(column, nowrap, flex-start, center);
+  width: vw(186);
+  height: vw(132);
+  text-align: center;
+}
+
+.jd-nav_img {
+  width: vw(80);
+  height: vw(80);
+}
+
+.jd-nav_title {
+  padding-top: 4px;
+  font-size: 14px;
+}
+
+/* main */
+.jd-main {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.jd-product, .jd-selfbus {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 1px #ccc;
+}
+
+.jd-title-more {
+  box-sizing: border-box;
+  flex-box(row, nowrap, space-between, center);
+  width: 100%;
+  height: vw(68);
+  padding: 0 10px;
+}
+
+.jd-title-more_left {
+  flex-box(row, nowrap, flex-start, center);
+}
+
+.jd-title-more_icon {
+  width: vw(32);
+  height: vw(40);
+  background: url('../../images/seckill-icon.png') no-repeat center;
+  vertical-align: middle;
+  background-size: vw(32) vw(40);
+}
+
+.jd-title-more_name {
+  font-size: 14px;
+  padding: 0 vw(20);
+  color: font_name_color;
+}
+
+.jd-time-block {
+  width: vw(240);
+  flex-box(row, nowrap, space-around, center);
+  font-size: 14px;
+}
+
+.jd-time-block_item {
+  padding: 1px 4px;
+  background-color: #000;
+  color: #fff;
+}
+
+.jd-time-block_colon {
+  max-width: 4px;
+  font-size: 8px;
+  white-space: 0px;
+  letter-spacing: 0;
+}
+
+.jd-title-more_jump {
+  font-size: 14px;
+  color: #222;
+}
+
+.jd-scroll-list {
+  padding: 10px 0;
+  flex-box(row, nowrap, space-around, center);
+}
+
+.jd-scroll-list_item {
+  flex-box(column, nowrap, space-between, center);
+  padding: 0 vw(40);
+  font-size: 14px;
+}
+
+.jd-scroll-list_pic {
+  width: 100%;
+}
+
+.jd-scroll-list_price {
+  color: font_name_color;
+}
+
+.jd-scroll-list_del-price {
+  line-height: 14px;
+}
+
+/* 京东自营 */
+.jd-selfbus_name {
+  position: relative;
+  box-sizing: border-box;
+  flex-box(row, nowrap, flex-start, center);
+  padding: 4px 8px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.jd-selfbus_name:before {
+  content: '';
+  width: 4px;
+  height: 16px;
+  margin-right: 8px;
+  background-color: font_name_color;
+}
+
+.jd-selfbus_name:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  transform: scaleY(0.5);
+  background-color: border_color;
+}
+
+.jd-selfbus-main {
+  flex-box(row, nowrap, flex-start, flex-start);
+}
+
+.jd-selfbus_singleline, .jd-selfbus_doubleline {
+  position: relative;
+  width: 50%;
+  flex: 1;
+  flex-box(column, nowrap, flex-start, center);
+}
+
+.jd-selfbus-main .jd-product:after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: border_color;
+}
+
+.jd-selfbus_singleline img, .jd-selfbus_doubleline img {
+  width: 100%;
+}
+
+.jd-selfbus .bb {
+  border-bottom: 1px solid border_color;
+}
+
+.jd-selfbus .br {
+  border-right: 1px solid border_color;
+}
+
+
+.jd-selfbus .bl {
+  border-left: 1px solid border_color;
+}

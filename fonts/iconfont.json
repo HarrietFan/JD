@@ -1,0 +1,44 @@
+{
+  "id": "2078465",
+  "name": "player",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "400969",
+      "name": "pause",
+      "font_class": "pause",
+      "unicode": "e7d2",
+      "unicode_decimal": 59346
+    },
+    {
+      "icon_id": "1769930",
+      "name": "循环",
+      "font_class": "xunhuan",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "5203313",
+      "name": "音量",
+      "font_class": "yinliang",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "8159877",
+      "name": "全屏",
+      "font_class": "quanping",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "10043887",
+      "name": "Player",
+      "font_class": "Player",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    }
+  ]
+}
